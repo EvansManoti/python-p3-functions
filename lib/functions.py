@@ -1,33 +1,23 @@
-#!/usr/bin/env python3
-
 def greet_programmer():
-    pass
-    print("Hello Manoti!")
-
-greet_programmer
+    print("Hello, programmer!")
 
 def greet(name):
-    pass
-    print("Hello {}".format(name))
-
-    greet("Manoti")
+    print("Hello, {}!".format(name))
 
 def greet_with_default(name="programmer"):
-    pass
-    print("Hello {}".format(name))
-
-    greet_with_default()
+    print("Hello, {}!".format(name))
 
 def add(num1, num2):
-    pass
-    return(num1*num2)
-
-result = add(12, 888)
-print("sum:", result)
+    return num1 + num2
 
 def halve(number):
-    pass
-    number // 4
+    return number / 2
 
-result =halve(2)
-print("Half:" ,result)
+greet_programmer()
+greet("Manoti")
+greet_with_default()
+greet_with_default("Vanessa")
+result = add(3, 5)
+print("Sum:", result)
+halved_value = halve(10)
+print("Halved value:", halved_value)
